@@ -1,0 +1,41 @@
+.c-hero {
+  &__section {
+    grid-column: full-start / full-end;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  &__image-container {
+    position: absolute;
+    height: 100vh;
+  }
+
+  &__text-container {
+    color: $color-grey-lightest;
+    position: relative;
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+    height: 100vh;
+    margin: auto 3rem;
+    text-align: left;
+  }
+
+  &__heading {
+    font-size: 5rem;
+    font-weight: 900;
+
+    @include respond(tab-port) { font-size: 6rem; }
+    @include respond(desktop) { font-size: 8rem; }
+  }
+
+  &__subheading {
+    font-family: $font-secondary;
+    font-size: $font-size-medium;
+    font-weight: 500;
+
+    @include respond(tab-port) { font-size: $font-size-large; }
+    @include respond(desktop) { font-size: $font-size-huge; }
+  }
+}

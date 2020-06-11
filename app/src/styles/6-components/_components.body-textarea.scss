@@ -1,0 +1,19 @@
+.c-body-textarea {
+  background-color: inherit;
+  color: $color-grey-darkest;
+  border: none;
+  font-family: $font-secondary;
+  font-size: $font-size-normal;
+  line-height: 1.5;
+  height: auto;
+  margin-top: $spacing-tiny;
+  resize: none;
+  width: 100%;
+
+  @include respond(tab-land) { font-size: $font-size-medium; }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

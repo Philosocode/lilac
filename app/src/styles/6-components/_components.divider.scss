@@ -1,0 +1,14 @@
+.c-divider {
+  background-color: $color-grey-lighter;
+  height: 5px;
+  margin: 0 auto;
+  margin-bottom: $spacing-small;
+  width: 12rem;
+
+  @include respond(tab-port) { 
+    height: 7px;
+    margin: 0 0 $spacing-medium 0;
+    width: 14rem; 
+  }
+  @include respond(desktop) { width: 15rem; }
+}

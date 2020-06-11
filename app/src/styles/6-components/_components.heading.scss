@@ -1,0 +1,15 @@
+.c-heading {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include respond(tab-port) { text-align: left;; }
+
+  &--section {
+    font-size: 3.6rem;
+    font-weight: 900;
+
+    @include respond(tab-port) { font-size: 4rem; }
+    @include respond(desktop) { font-size: 4.6rem; }
+  }
+}

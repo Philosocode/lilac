@@ -1,0 +1,32 @@
+.c-triangle-clip {
+  &__container {
+    height: 10rem;
+    position: relative;
+    margin-bottom: -1rem;
+
+    @include respond(tab-port) {
+      height: 20rem;
+      margin-bottom: -5rem;
+    }
+
+    @include respond(desktop) { 
+      margin-bottom: -13rem;
+      height: 40rem; 
+    }
+  }
+
+  &__left, &__right {
+    background-color: $color-off-black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__left {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+
+  &__right {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+}

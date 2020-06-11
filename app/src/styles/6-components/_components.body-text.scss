@@ -1,0 +1,5 @@
+.c-body-text {
+  font-family: $font-secondary;
+  
+  @include respond(desktop) { font-size: $font-size-medium; }
+}

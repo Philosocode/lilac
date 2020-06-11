@@ -1,0 +1,108 @@
+.c-dropdown {
+  &__container {
+    background-color: $color-off-white;
+    border-radius: 5px;
+    box-shadow: $box-shadow-default;
+    position: relative;
+      right: 8rem;
+      top: 1.5rem;
+    width: 13rem;
+    z-index: 100;
+
+    @include respond(tab-port) {
+      right: 3.3rem;
+      top: 2rem;
+    }
+  }
+
+  &__arrow {
+    border-radius: inherit;
+    border-left: 1.2rem solid transparent; 
+    border-right: 1.2rem solid transparent;
+    border-bottom: 1.5rem solid $color-off-white;
+    position: absolute;
+      top: -1.3rem;
+      left: 8.7rem;
+
+    @include respond(tab-port) {
+      left: 5.1rem;
+      top: -1.3rem;
+    }
+  }
+
+  &__list {
+    border-radius: inherit;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  &__item {
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 900;
+    padding: 1rem;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+    
+    &:first-of-type {
+      border-bottom: 1px solid $color-grey-lighter;
+    }
+
+    &:hover {
+      background-color: $color-grey-lightest;
+
+      .c-dropdown__link {  
+        color: $color-green-dark;
+      }
+
+      &:before {
+        opacity: 1;
+      }
+
+      .c-dropdown__text, .c-dropdown__text-arrow {
+        transform: translateX(3px);
+      }
+    }
+  }
+
+  &__link {
+    color: $color-grey;
+    display: block;
+  }
+
+  &__text, &__text-arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  &__text-container {
+    display: block;
+    width: 100%;
+  }
+
+  &__text {
+    margin-left: 1rem;
+  }
+
+  &__text-arrow {
+    margin-left: 5px;
+  }
+
+  &__item:before {
+    background-color: $color-green-dark;
+    content: "";
+    opacity: 0;
+    position: absolute;
+      left: 0;
+      top: 0;
+    transition: opacity 0.3s ease;
+    width: 5px;
+    height: 100%;
+  }
+}

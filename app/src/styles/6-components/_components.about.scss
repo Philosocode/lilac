@@ -1,0 +1,61 @@
+.c-about {
+  $section-height: 80rem;
+
+  &__section {
+    background-color: $color-grey-darkest;
+    display: grid;
+      grid-template-columns: 5% 40% 1fr 5%;
+    overflow: hidden;
+  }
+
+  &__left-side {
+    background-color: $color-grey-darkest;
+    display: flex;
+      align-items: center;
+    grid-column: 1 / -1;
+    position: relative;
+    z-index: 1;
+
+    @include respond(tab-port) { 
+      grid-column: 2 / 3; 
+      transform: skewX(-10deg);
+    }
+  }
+
+  @include respond(tab-port) {
+    &__left-side:after {
+      content: '';
+      display: block;
+      background-color: $color-grey-darkest;
+      height: 100%;
+      position: absolute;
+        top: 0;
+        right: -9rem;
+      width: 20rem;
+      z-index: -1;
+    }
+  }
+
+
+  &__text-container {
+    color: $color-grey-lightest;
+    margin: 0 auto;
+    padding: $spacing-medium 0;
+    text-align: center;
+    width: 80%;
+
+    @include respond(tab-port) {
+      text-align: left;
+      transform: skewX(10deg);
+      width: 100%;
+    }
+  }
+
+  &__right-side {
+    grid-column: 1 / -1;
+    
+    @include respond(tab-port) {
+      grid-column: 3 / -1;
+    }
+  }
+}

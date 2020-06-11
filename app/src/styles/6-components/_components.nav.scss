@@ -1,0 +1,80 @@
+.c-nav {
+  &__container {
+    height: 4rem;
+    position: fixed;
+      top: 2rem;
+      right: 2rem;
+    width: 4rem;
+    z-index: 100;
+
+    @include respond(tab-port) { 
+      height: 6rem;
+      right: 4.5rem;
+      top: 3rem;
+      width: 6rem;
+    }
+  }
+
+  &__icon-container {
+    background-color: $color-grey-darker;
+    border-radius: 50%;
+    box-shadow: $box-shadow-alt;
+    cursor: pointer;
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    height: 100%;
+    overflow: hidden;
+    transition: background-color 0.2s ease;
+    width: 100%;
+  }
+
+  &__icon-container:hover {
+    background-color: $color-grey-dark;
+
+    .c-nav__top-line { transform: translateY(-2px); }
+    .c-nav__bottom-line { transform: translateY(2px); }
+  }
+
+  &__top-line,
+  &__center-line,
+  &__bottom-line {
+    background-color: $color-grey-lighter;
+    height: 2px;
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    width: 2.4rem;
+
+    @include respond(tab-port) { 
+      height: 3px; 
+      width: 3.4rem;
+    }
+  }
+
+  &__center-line {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+
+    @include respond(tab-port) {
+      margin-top: $spacing-tiny;
+      margin-bottom: $spacing-tiny;
+    }
+  }
+
+  &__icon-container.is-active {
+    background-color: $color-grey-dark;
+
+    .c-nav__center-line { opacity: 0; }
+
+    .c-nav__top-line { transform: translate(4px, -4px) rotate(45deg); }
+    .c-nav__bottom-line { transform: translate(4px, 3px) rotate(-45deg); }
+
+    @include respond(tab-port) {
+      .c-nav__top-line { transform: translate(5px, -2px) rotate(45deg); }
+      .c-nav__bottom-line { transform: translate(5px, 2px) rotate(-45deg); }
+    }
+  }
+}

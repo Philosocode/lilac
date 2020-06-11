@@ -1,0 +1,42 @@
+.c-title-input {
+  &__container {
+    display: flex;
+    margin-top: $spacing-huge;
+    height: 4rem;
+    position: relative;
+    width: 100%;
+
+    @include respond(tab-land) { height: 6rem; }
+  }
+
+  &__input {
+    background-color: inherit;
+    border: none;
+    color: $color-grey-darkest;
+    font-family: $font-secondary;
+    font-size: $font-size-large;
+    font-weight: bold;
+    width: 100%;
+
+    @include respond(tab-land) { font-size: $font-size-huge; }
+    
+    &:active,
+    &:focus {
+      outline: none;
+
+      & + .c-title-input__block {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__block {
+    background-color: $color-green-dark;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+      left: -1.5rem;
+    transition: opacity 0.3s ease;
+    width: 6px;
+  }
+}
