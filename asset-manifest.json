@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/lilac/static/css/main.a83fe4a3.chunk.css",
-    "main.js": "/lilac/static/js/main.9b5eb3fd.chunk.js",
-    "main.js.map": "/lilac/static/js/main.9b5eb3fd.chunk.js.map",
+    "main.js": "/lilac/static/js/main.bf0f1f6a.chunk.js",
+    "main.js.map": "/lilac/static/js/main.bf0f1f6a.chunk.js.map",
     "runtime-main.js": "/lilac/static/js/runtime-main.ff3a23f2.js",
     "runtime-main.js.map": "/lilac/static/js/runtime-main.ff3a23f2.js.map",
     "static/js/2.0d083d4a.chunk.js": "/lilac/static/js/2.0d083d4a.chunk.js",
     "static/js/2.0d083d4a.chunk.js.map": "/lilac/static/js/2.0d083d4a.chunk.js.map",
     "index.html": "/lilac/index.html",
-    "precache-manifest.621343467ded83e35a17f509e2ca86f9.js": "/lilac/precache-manifest.621343467ded83e35a17f509e2ca86f9.js",
+    "precache-manifest.bc0dc234346980a2d3c867adf660abc4.js": "/lilac/precache-manifest.bc0dc234346980a2d3c867adf660abc4.js",
     "service-worker.js": "/lilac/service-worker.js",
     "static/css/main.a83fe4a3.chunk.css.map": "/lilac/static/css/main.a83fe4a3.chunk.css.map",
     "static/js/2.0d083d4a.chunk.js.LICENSE.txt": "/lilac/static/js/2.0d083d4a.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.ff3a23f2.js",
     "static/js/2.0d083d4a.chunk.js",
     "static/css/main.a83fe4a3.chunk.css",
-    "static/js/main.9b5eb3fd.chunk.js"
+    "static/js/main.bf0f1f6a.chunk.js"
   ]
 }

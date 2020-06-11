@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ddf315eb48e0064218bc5683db28aa2",
+    "revision": "a3daac18a683a3a4598eabf77ec8275b",
     "url": "/lilac/index.html"
   },
   {
-    "revision": "e2da54f9ee34559fce21",
+    "revision": "c583b1cb26074a41225f",
     "url": "/lilac/static/css/main.a83fe4a3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lilac/static/js/2.0d083d4a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e2da54f9ee34559fce21",
-    "url": "/lilac/static/js/main.9b5eb3fd.chunk.js"
+    "revision": "c583b1cb26074a41225f",
+    "url": "/lilac/static/js/main.bf0f1f6a.chunk.js"
   },
   {
     "revision": "1a7215dfd56c333e405b",
