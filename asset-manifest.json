@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/lilac/static/css/main.a83fe4a3.chunk.css",
+    "main.js": "/lilac/static/js/main.9b5eb3fd.chunk.js",
+    "main.js.map": "/lilac/static/js/main.9b5eb3fd.chunk.js.map",
+    "runtime-main.js": "/lilac/static/js/runtime-main.ff3a23f2.js",
+    "runtime-main.js.map": "/lilac/static/js/runtime-main.ff3a23f2.js.map",
+    "static/js/2.0d083d4a.chunk.js": "/lilac/static/js/2.0d083d4a.chunk.js",
+    "static/js/2.0d083d4a.chunk.js.map": "/lilac/static/js/2.0d083d4a.chunk.js.map",
+    "index.html": "/lilac/index.html",
+    "precache-manifest.621343467ded83e35a17f509e2ca86f9.js": "/lilac/precache-manifest.621343467ded83e35a17f509e2ca86f9.js",
+    "service-worker.js": "/lilac/service-worker.js",
+    "static/css/main.a83fe4a3.chunk.css.map": "/lilac/static/css/main.a83fe4a3.chunk.css.map",
+    "static/js/2.0d083d4a.chunk.js.LICENSE.txt": "/lilac/static/js/2.0d083d4a.chunk.js.LICENSE.txt",
+    "static/media/cafe.jpg": "/lilac/static/media/cafe.15db631e.jpg",
+    "static/media/coffee.jpg": "/lilac/static/media/coffee.abba62a0.jpg",
+    "static/media/hero.jpg": "/lilac/static/media/hero.37462eb7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff3a23f2.js",
+    "static/js/2.0d083d4a.chunk.js",
+    "static/css/main.a83fe4a3.chunk.css",
+    "static/js/main.9b5eb3fd.chunk.js"
+  ]
+}
